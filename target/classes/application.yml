@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/users
+    driver-class-name: com.mysql.jdbc.Driver
+
+#\u9A7C\u5CF0\u5F00\u542F lastName=last_name
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.example.homework.mapper
+  mapper-locations: classpath:mapper/*.xml
+server:
+  port: 8887
